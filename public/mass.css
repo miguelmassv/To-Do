@@ -1,0 +1,103 @@
+body{
+    background: #303030;
+    color: #F5F5F5; 
+}
+.modal-content{
+    background-color:#424242;
+}
+.card{
+    background-color:#424242;
+    padding: 10px 10px 0px 10px;
+    height: 100px;
+    width: 257px;
+    margin: 10px;
+    border-style: solid;
+    border-color: rgb(32, 32, 32);    
+    color: white;
+    float: left; 
+    text-align:center;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .card.done{
+    border-color: rgb(99, 16, 16); 
+  }
+.container {
+  margin-top: 20px;
+}
+.card.center{
+  float: none;
+}
+.plus{
+    border-radius: 100px;
+    
+}
+  .new a{
+    color: rgb(37, 223, 214);
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 10px;    
+ 
+
+  }
+  .option a{
+    color: rgb(122, 122, 122);
+    font-size: 18px;
+    font-weight: bold;
+    
+
+  }
+
+  .row{
+      margin: 0px;
+  }
+
+  .card-footer{
+    padding: 0px 0px;
+    padding-top: 19px;
+    background-color:#424242;
+    border-top:none;
+  }
+
+
+  .card:hover {
+    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+    border-color:rgb(37, 223, 214);
+       
+  }
+  .plus:hover {
+    color: rgba(28, 156, 150, 0.712);
+  }
+
+  .red:hover{
+      color: rgba(117, 29, 29, 0.534);
+  }
+  .green:hover{
+    color: rgba(32, 117, 29, 0.534);
+}
+  
+  .card-nohover {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .plus:focus {
+    outline: none;
+  }
+
+
+
+  button{
+    border: 0; 
+    background: none;
+    color: rgb(122, 122, 122);
+    font-size: 18px;
+    font-weight: bold;   
+  }
+
+  .red:focus {
+    outline: none;
+  }
+  .green:focus {
+    outline: none;
+  }

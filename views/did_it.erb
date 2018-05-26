@@ -1,0 +1,33 @@
+
+  <div class="d-flex justify-content-between">
+
+      <h1>Done</h1>
+
+<div class="option my-auto">
+  <button>
+    <a href="/">Home</a>
+  </button>
+</div>
+  </div>
+
+
+   <div class = "row">
+
+        <% @tareas.each do |tarea| %>
+   <% if tarea["done"] == true %>
+               <div class="card done">        
+            <div class = "row"><p><%= tarea["title"] %></p> </div>
+              <div class="card-footer">
+                <div class="option ">
+                                  <form action="/destroy" method="post" style="display:inline" class="form-inline">
+                  <input type="hidden" name="id" value="<%=tarea["id"]%>">
+                  <button onclick="return confirm('Are you sure to delete this task?');" type="submit" class="red float-right"><i class="far fa-trash-alt"></i></button>
+                </form>
+                </div>
+
+            </div>
+          </div>
+   <% end %>
+        <% end %>
+    </div>
+
